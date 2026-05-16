@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated vector index & serialized data (rebuild with build_index.py)
+data/*.faiss
+data/*.pkl
+
+# Environment variables
+.env
+
+# Editor & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Empty placeholder files
+.gitkeep
+data/embeddings_model.txt

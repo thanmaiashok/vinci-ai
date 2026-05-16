@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    width: 600px;
+    background: white;
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.chat-box {
+    height: 450px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.message {
+    margin-bottom: 18px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.user {
+    text-align: right;
+    color: #0066ff;
+}
+
+.bot {
+    text-align: left;
+    color: #222;
+}
+
+.typing {
+    text-align: left;
+    color: #888;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.input-area {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    min-width: 0;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0066ff;
+}
+
+button {
+    padding: 12px 20px;
+    background: #0066ff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #0050cc;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* ── Tablet (≤768px) ─────────────────────────────── */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 16px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-box {
+        flex: 1;
+        height: auto;
+        min-height: 300px;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+}
+
+/* ── Mobile (≤480px) ─────────────────────────────── */
+@media (max-width: 480px) {
+    .chat-container {
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    input[type="text"] {
+        font-size: 16px; /* prevents iOS zoom-in on focus */
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .message {
+        font-size: 14px;
+    }
+}
