@@ -1,4 +1,5 @@
 <p align="center"><img src="docs/flow.svg" alt="Animated Vinci AI pipeline: Ask → Route → Retrieve → Reason → Reply" width="100%"/></p>
+
 <p align="center"><sub>10-second tour: Ask → Route → Retrieve → Reason → Reply</sub></p>
 
 <p align="center"><img src="docs/mc/intro.svg" width="100%" alt="A local RAG-powered reasoning assistant inspired by Leonardo da Vinci. Ask about art, anatomy, mechanics, fluid dynamics, optics and geometry, answered from his notebook texts."/></p>
