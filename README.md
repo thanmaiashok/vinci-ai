@@ -1,30 +1,30 @@
-<p align="center"><img src="docs/flow-2.svg" alt="Animated Vinci AI pipeline: Ask → Route → Retrieve → Reason → Reply" width="100%"/></p>
+<p align="center"><img src="docs/flow-3.svg" alt="Animated Vinci AI pipeline: Ask → Route → Retrieve → Reason → Reply" width="100%"/></p>
 
 <p align="center"><sub>10-second tour: Ask → Route → Retrieve → Reason → Reply</sub></p>
 
-<p align="center"><img src="docs/px/intro.svg" width="100%" alt="A local RAG-powered reasoning assistant inspired by Leonardo da Vinci. Ask about art, anatomy, mechanics, fluid dynamics, optics and geometry, answered from his notebook texts."/></p>
+<p align="center"><img src="docs/px3/intro.svg" width="100%" alt="A local RAG-powered reasoning assistant inspired by Leonardo da Vinci. Ask about art, anatomy, mechanics, fluid dynamics, optics and geometry, answered from his notebook texts."/></p>
 
-<p align="center"><img src="docs/px/features.svg" width="100%" alt="Key features"/></p>
+<p align="center"><img src="docs/px3/features.svg" width="100%" alt="Key features"/></p>
 
 <a id="features"></a>
-<h2><img src="docs/px/h2-features.svg" width="100%" alt="Features"/></h2>
+<h2><img src="docs/px3/h2-features.svg" width="100%" alt="Features"/></h2>
 
-<p align="center"><img src="docs/px/t-01.svg" width="100%" alt="RAG pipeline - FAISS vector index over Leonardo&#x27;s labeled notebook entries Local LLM - runs fully offline via Ollama (no API keys, no cloud) Smart routing - small talk bypasses RAG; topic-relevant questions trigger retrieval Responsive UI - plain HTML/CSS/JS chat interface, works on all screen sizes Fast setup - single setup.bat installs everything"/></p>
+<p align="center"><img src="docs/px3/t-01.svg" width="100%" alt="RAG pipeline - FAISS vector index over Leonardo&#x27;s labeled notebook entries Local LLM - runs fully offline via Ollama (no API keys, no cloud) Smart routing - small talk bypasses RAG; topic-relevant questions trigger retrieval Responsive UI - plain HTML/CSS/JS chat interface, works on all screen sizes Fast setup - single setup.bat installs everything"/></p>
 
-<p align="center"><a href="https://ollama.com"><img src="docs/px/link-01.svg" height="34" alt="Ollama"/></a></p>
+<p align="center"><a href="https://ollama.com"><img src="docs/px3/link-01.svg" height="34" alt="Ollama"/></a></p>
 
 <a id="prerequisites"></a>
-<h2><img src="docs/px/h2-prerequisites.svg" width="100%" alt="Prerequisites"/></h2>
+<h2><img src="docs/px3/h2-prerequisites.svg" width="100%" alt="Prerequisites"/></h2>
 
-<p align="center"><img src="docs/px/t-02.svg" width="100%" alt="Requirement | Version | Link Python | 3.10+ | https://python.org Ollama | Latest | https://ollama.com/download LLM Model | llama3.1:8b-instruct-q4_K_M | pulled automatically by setup"/></p>
+<p align="center"><img src="docs/px3/t-02.svg" width="100%" alt="Requirement | Version | Link Python | 3.10+ | https://python.org Ollama | Latest | https://ollama.com/download LLM Model | llama3.1:8b-instruct-q4_K_M | pulled automatically by setup"/></p>
 
 <a id="quick-start"></a>
-<h2><img src="docs/px/h2-quick-start.svg" width="100%" alt="Quick Start"/></h2>
+<h2><img src="docs/px3/h2-quick-start.svg" width="100%" alt="Quick Start"/></h2>
 
-<p align="center"><img src="docs/px/c-01.svg" width="100%" alt="code: :: 1. Clone the repo git clone https://github.com/thanmaiashok/vinci-ai.git cd vinci-ai :: 2. Run setup (installs deps, pulls model, builds index) setup.bat :: "/></p>
+<p align="center"><img src="docs/px3/c-01.svg" width="100%" alt="code: :: 1. Clone the repo git clone https://github.com/thanmaiashok/vinci-ai.git cd vinci-ai :: 2. Run setup (installs deps, pulls model, builds index) setup.bat :: "/></p>
 
 <details>
-<summary>Copy as text</summary>
+<summary><img src="docs/px3/copy-btn.svg" height="40" alt="Copy code: click to open"/></summary>
 
 ```bat
 :: 1. Clone the repo
@@ -40,15 +40,15 @@ start_vinci_ai.bat
 
 </details>
 
-<p align="center"><img src="docs/px/t-03.svg" width="100%" alt="The chat UI will open in your browser. The FastAPI backend runs at http://localhost:8000."/></p>
+<p align="center"><img src="docs/px3/t-03.svg" width="100%" alt="The chat UI will open in your browser. The FastAPI backend runs at http://localhost:8000."/></p>
 
 <a id="project-structure"></a>
-<h2><img src="docs/px/h2-project-structure.svg" width="100%" alt="Project Structure"/></h2>
+<h2><img src="docs/px3/h2-project-structure.svg" width="100%" alt="Project Structure"/></h2>
 
-<p align="center"><img src="docs/px/c-02.svg" width="100%" alt="code: vinci_ai/ ├── backend/ │ ├── server.py # FastAPI REST API (/ask endpoint) │ └── llm_client.py # Connects API to RAG agent ├── frontend/ │ ├── index.html # Chat "/></p>
+<p align="center"><img src="docs/px3/c-02.svg" width="100%" alt="code: vinci_ai/ ├── backend/ │ ├── server.py # FastAPI REST API (/ask endpoint) │ └── llm_client.py # Connects API to RAG agent ├── frontend/ │ ├── index.html # Chat "/></p>
 
 <details>
-<summary>Copy as text</summary>
+<summary><img src="docs/px3/copy-btn.svg" height="40" alt="Copy code: click to open"/></summary>
 
 ```
 vinci_ai/
@@ -76,15 +76,15 @@ vinci_ai/
 
 </details>
 
-<p align="center"><img src="docs/px/t-04.svg" width="100%" alt="data/*.faiss and data/*.pkl are generated by setup.bat and excluded from version control."/></p>
+<p align="center"><img src="docs/px3/t-04.svg" width="100%" alt="data/*.faiss and data/*.pkl are generated by setup.bat and excluded from version control."/></p>
 
 <a id="how-it-works"></a>
-<h2><img src="docs/px/h2-how-it-works.svg" width="100%" alt="How It Works"/></h2>
+<h2><img src="docs/px3/h2-how-it-works.svg" width="100%" alt="How It Works"/></h2>
 
-<p align="center"><img src="docs/px/c-03.svg" width="100%" alt="code: User question │ ▼ is_smalltalk()? ──Yes──▶ Ollama (no RAG) │ No │ ▼ is_notebook_question()? ──No──▶ Ollama (general answer) │ Yes │ ▼ FAISS retrieval (top-5 chu"/></p>
+<p align="center"><img src="docs/px3/c-03.svg" width="100%" alt="code: User question │ ▼ is_smalltalk()? ──Yes──▶ Ollama (no RAG) │ No │ ▼ is_notebook_question()? ──No──▶ Ollama (general answer) │ Yes │ ▼ FAISS retrieval (top-5 chu"/></p>
 
 <details>
-<summary>Copy as text</summary>
+<summary><img src="docs/px3/copy-btn.svg" height="40" alt="Copy code: click to open"/></summary>
 
 ```
 User question
@@ -115,14 +115,14 @@ User question
 </details>
 
 <a id="rebuilding-the-index"></a>
-<h2><img src="docs/px/h2-rebuilding-the-index.svg" width="100%" alt="Rebuilding the Index"/></h2>
+<h2><img src="docs/px3/h2-rebuilding-the-index.svg" width="100%" alt="Rebuilding the Index"/></h2>
 
-<p align="center"><img src="docs/px/t-05.svg" width="100%" alt="If you update data/vinci_labeled.jsonl, rebuild the FAISS index:"/></p>
+<p align="center"><img src="docs/px3/t-05.svg" width="100%" alt="If you update data/vinci_labeled.jsonl, rebuild the FAISS index:"/></p>
 
-<p align="center"><img src="docs/px/c-04.svg" width="100%" alt="code: venv\Scripts\activate python -m rag.build_index "/></p>
+<p align="center"><img src="docs/px3/c-04.svg" width="100%" alt="code: venv\Scripts\activate python -m rag.build_index "/></p>
 
 <details>
-<summary>Copy as text</summary>
+<summary><img src="docs/px3/copy-btn.svg" height="40" alt="Copy code: click to open"/></summary>
 
 ```bat
 venv\Scripts\activate
@@ -132,15 +132,15 @@ python -m rag.build_index
 </details>
 
 <a id="tech-stack"></a>
-<h2><img src="docs/px/h2-tech-stack.svg" width="100%" alt="Tech Stack"/></h2>
+<h2><img src="docs/px3/h2-tech-stack.svg" width="100%" alt="Tech Stack"/></h2>
 
-<p align="center"><img src="docs/px/t-06.svg" width="100%" alt="Layer | Technology Backend API | FastAPI + Uvicorn Vector Search | FAISS (IndexFlatIP, cosine similarity) Embeddings | all-MiniLM-L6-v2 via sentence-transformers LLM Inference | Ollama (local, CPU) Frontend | Vanilla HTML / CSS / JavaScript"/></p>
+<p align="center"><img src="docs/px3/t-06.svg" width="100%" alt="Layer | Technology Backend API | FastAPI + Uvicorn Vector Search | FAISS (IndexFlatIP, cosine similarity) Embeddings | all-MiniLM-L6-v2 via sentence-transformers LLM Inference | Ollama (local, CPU) Frontend | Vanilla HTML / CSS / JavaScript"/></p>
 
 <a id="license"></a>
-<h2><img src="docs/px/h2-license.svg" width="100%" alt="License"/></h2>
+<h2><img src="docs/px3/h2-license.svg" width="100%" alt="License"/></h2>
 
-<p align="center"><img src="docs/px/t-07.svg" width="100%" alt="MIT - see LICENSE"/></p>
+<p align="center"><img src="docs/px3/t-07.svg" width="100%" alt="MIT - see LICENSE"/></p>
 
-<p align="center"><a href="LICENSE"><img src="docs/px/link-02.svg" height="34" alt="LICENSE"/></a></p>
+<p align="center"><a href="LICENSE"><img src="docs/px3/link-02.svg" height="34" alt="LICENSE"/></a></p>
 
-<p align="center"><a href="https://github.com/thanmaiashok"><img src="docs/px/footer.svg" width="100%" alt="Built by Thanmai A, founder of FoxynAI"/></a></p>
+<p align="center"><a href="https://github.com/thanmaiashok"><img src="docs/px3/footer.svg" width="100%" alt="Built by Thanmai A, founder of FoxynAI"/></a></p>
